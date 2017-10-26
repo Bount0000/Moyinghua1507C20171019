@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <CheckBox
+        android:id="@+id/select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="33dp"
+        android:layout_alignBottom="@+id/iv"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/select"
+        android:layout_toEndOf="@+id/select"
+        android:id="@+id/iv" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="商品name"
+        android:layout_above="@+id/select"
+        android:layout_toRightOf="@+id/iv"
+        android:layout_toEndOf="@+id/iv"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:id="@+id/title1"
+       />
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="价格price"
+        android:layout_alignBottom="@+id/select"
+        android:layout_alignLeft="@+id/title1"
+        android:layout_alignStart="@+id/title1"
+        android:textColor="#f00"/>
+</RelativeLayout>

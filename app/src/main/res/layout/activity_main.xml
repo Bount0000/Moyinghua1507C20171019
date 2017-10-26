@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bwie.moyinghua1507c20171019.MainActivity">
+
+   <TextView
+       android:gravity="center"
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:text="购物车"
+       android:background="#f00"
+       android:textColor="#ffffff"
+       android:textSize="20sp"
+       android:id="@+id/textView" />
+
+   <android.support.v7.widget.RecyclerView
+       android:id="@+id/rc"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_below="@+id/textView"
+       android:layout_above="@+id/linearLayout"></android.support.v7.widget.RecyclerView>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:id="@+id/linearLayout">
+   <CheckBox
+       android:id="@+id/allselect"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_centerVertical="true"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentStart="true" />
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="match_parent"
+       android:text="合计:"
+       android:layout_alignParentTop="true"
+       android:layout_toRightOf="@+id/allselect"
+       android:layout_toEndOf="@+id/allselect"
+       android:layout_marginLeft="35dp"
+       android:layout_marginStart="35dp"
+       android:gravity="center"
+       android:id="@+id/textView2" />
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="match_parent"
+       android:id="@+id/sum"
+       android:text="0.0"
+       android:layout_alignParentTop="true"
+       android:layout_toRightOf="@+id/textView2"
+       android:layout_toEndOf="@+id/textView2"
+       android:gravity="center"
+       android:textColor="@color/colorAccent"/>
+   <Button
+       android:id="@+id/pay"
+       android:layout_width="wrap_content"
+       android:layout_height="match_parent"
+       android:text="付款"
+       android:layout_alignParentTop="true"
+       android:layout_alignParentRight="true"
+       android:layout_alignParentEnd="true"
+       android:background="#f00"
+       android:textColor="#fff"/>
+</RelativeLayout>
+</RelativeLayout>
